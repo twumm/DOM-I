@@ -1,10 +1,12 @@
-let limit = 10;
-let start = 0;
+let secondTens = document.querySelector('#secondTens');
+let secondOnes = document.querySelector('#secondOnes');
+let msHundreds = document.querySelector('#msHundreds');
+let msTens = document.querySelector('#msTens');
 
-const timer = setInterval(increment, 100);
+// msTens.textContent
 
-function increment() {
-  if (start < 10) {
-    start = start + 1;
-  }
+const increment = () => {
+  // msTens.innerText += 1;
 }
+
+let timeInterval = window.setInterval(increment, 10);
