@@ -63,6 +63,8 @@ let contactParas = document.querySelectorAll('.contact p');
 let contactAddress = contactParas[0];
 let contactPhone = contactParas[1];
 let contactEmail = contactParas[2];
+// Selector for footer
+let footerCopyright = document.querySelector('footer p');
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
