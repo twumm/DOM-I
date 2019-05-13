@@ -132,3 +132,5 @@ hideButton.innerText = 'Click Me!';
 hideButton.setAttribute('style', 'display: flex; justify-content: center; width: 170px; height: 32px;');
 // Insert button
 ctaImg.insertAdjacentElement('afterend', hideButton)
+// Add event listener to button
+hideButton.addEventListener("click", hideImage);
