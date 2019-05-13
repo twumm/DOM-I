@@ -121,3 +121,14 @@ prependAnchor.style.color = 'green';
 mainBottom[0].children[0].style.color = "red";
 mainBottom[0].children[1].style.color = "#D65032";
 mainBottom[0].children[2].style.color = "#EC6E51";
+
+// Event handler for on click
+const hideImage = () => {
+  ctaImg.setAttribute('style', 'display: none;');
+}
+// Add button beneath image
+hideButton = document.createElement('button');
+hideButton.innerText = 'Click Me!';
+hideButton.setAttribute('style', 'display: flex; justify-content: center; width: 170px; height: 32px;');
+// Insert button
+ctaImg.insertAdjacentElement('afterend', hideButton)
