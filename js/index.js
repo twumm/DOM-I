@@ -81,8 +81,15 @@ mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]
 navLinks.forEach((navLink, index) => navLink.innerText = siteContent.nav["nav-item-" + (index + 1)]);
 ctaH1.innerText = siteContent.cta.h1;
 ctaButton.innerText = siteContent.cta.button;
-
+// Add content for main content top section
 mainTopContentFeaturesH4.innerText = siteContent["main-content"]["features-h4"]
 mainTopContentFeaturesContent.innerText = siteContent["main-content"]["features-content"];
 mainTopContentAboutH4.innerText = siteContent["main-content"]["about-h4"]
 mainTopContentAboutContent.innerText = siteContent["main-content"]["about-content"]
+// Add content for main content bottom section
+mainBottomServiceH4.innerText = siteContent["main-content"]["services-h4"];
+mainBottomServiceContent.innerText = siteContent["main-content"]["services-content"];
+mainBottomProductH4.innerText = siteContent["main-content"]["product-h4"];
+mainBottomProductContent.innerText = siteContent["main-content"]["product-content"];
+mainBottomVisionH4.innerText = siteContent["main-content"]["vision-h4"];
+mainBottomVisionContent.innerText = siteContent["main-content"]["vision-content"];
