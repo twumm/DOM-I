@@ -108,7 +108,11 @@ footerCopyright.innerText = siteContent.footer.copyright;
 
 // Add new content with appendChild()
 let appendAnchor = document.createElement('a');
+let prependAnchor = document.createElement('a');
 let navNode = document.body.children[0].children[0].childNodes[1];
 navNode.appendChild(appendAnchor);
+navNode.prepend(prependAnchor)
 appendAnchor.innerText = 'Append';
+prependAnchor.innerText = 'Prepend';
 appendAnchor.style.color = 'green';
+prependAnchor.style.color = 'green';
