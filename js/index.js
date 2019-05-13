@@ -38,7 +38,7 @@ const siteContent = {
 };
 
 // Selectors for nav items and cta
-let navItems = document.querySelectorAll('a');
+let navLinks = document.querySelectorAll('a');
 let ctaH1 = document.querySelector('.cta-text h1');
 let ctaButton = document.querySelector('.cta-text button');
 let ctaImg = document.querySelector('#cta-img');
@@ -76,3 +76,6 @@ ctaImg.setAttribute('src', siteContent.cta["img-src"]);
 ctaImg.setAttribute('style', 'display: flex;');
 // Image for main content
 mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// Update all HTML content using selectors
+navLinks.forEach((navLink, index) => navLink.innerText = siteContent.nav["nav-item-" + (index + 1)]);
