@@ -81,3 +81,8 @@ mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]
 navLinks.forEach((navLink, index) => navLink.innerText = siteContent.nav["nav-item-" + (index + 1)]);
 ctaH1.innerText = siteContent.cta.h1;
 ctaButton.innerText = siteContent.cta.button;
+
+mainTopContentFeaturesH4.innerText = siteContent["main-content"]["features-h4"]
+mainTopContentFeaturesContent.innerText = siteContent["main-content"]["features-content"];
+mainTopContentAboutH4.innerText = siteContent["main-content"]["about-h4"]
+mainTopContentAboutContent.innerText = siteContent["main-content"]["about-content"]
