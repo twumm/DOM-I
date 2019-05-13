@@ -100,3 +100,5 @@ contactH4.innerText = siteContent.contact["contact-h4"];
 contactAddress.innerText = siteContent.contact["address"];
 contactPhone.innerText = siteContent.contact["phone"];
 contactEmail.innerText = siteContent.contact["email"];
+// Add content for footer copyright
+footerCopyright.innerText = siteContent.footer.copyright;
