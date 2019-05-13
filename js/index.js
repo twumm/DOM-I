@@ -80,7 +80,10 @@ ctaImg.setAttribute('style', 'display: flex;');
 mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 // Update all HTML content using selectors
-navLinks.forEach((navLink, index) => navLink.innerText = siteContent.nav["nav-item-" + (index + 1)]);
+navLinks.forEach((navLink, index) => {
+  navLink.innerText = siteContent.nav["nav-item-" + (index + 1)]
+  navLink.setAttribute('style', 'color: green');
+});
 ctaH1.innerText = siteContent.cta.h1;
 ctaButton.innerText = siteContent.cta.button;
 // Add content for main content top section
