@@ -95,3 +95,8 @@ mainBottomProductH4.innerText = siteContent["main-content"]["product-h4"];
 mainBottomProductContent.innerText = siteContent["main-content"]["product-content"];
 mainBottomVisionH4.innerText = siteContent["main-content"]["vision-h4"];
 mainBottomVisionContent.innerText = siteContent["main-content"]["vision-content"];
+// Add content for contact section
+contactH4.innerText = siteContent.contact["contact-h4"];
+contactAddress.innerText = siteContent.contact["address"];
+contactPhone.innerText = siteContent.contact["phone"];
+contactEmail.innerText = siteContent.contact["email"];
