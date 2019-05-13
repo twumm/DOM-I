@@ -116,3 +116,8 @@ appendAnchor.innerText = 'Append';
 prependAnchor.innerText = 'Prepend';
 appendAnchor.style.color = 'green';
 prependAnchor.style.color = 'green';
+
+// Stretch Goals
+mainBottom[0].children[0].style.color = "red";
+mainBottom[0].children[1].style.color = "#D65032";
+mainBottom[0].children[2].style.color = "#EC6E51";
