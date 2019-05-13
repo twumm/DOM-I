@@ -37,6 +37,33 @@ const siteContent = {
   },
 };
 
+// Selectors for nav items and cta
+let navItems = document.querySelectorAll('a');
+let ctaH1 = document.querySelector('.cta-text h1');
+let ctaButton = document.querySelector('.cta-text button');
+let ctaImg = document.querySelector('#cta-img');
+// Selectors for top content in main tag
+let mainTopContent = document.querySelectorAll('.top-content');
+let mainTopContentFeaturesH4 = mainTopContent[0].children[0].children[0];
+let mainTopContentFeaturesContent = mainTopContent[0].children[0].children[1];
+let mainTopContentAboutH4 = mainTopContent[0].children[1].children[0];
+let mainTopContentAboutContent = mainTopContent[0].children[1].children[1];
+let mainContentImg = document.querySelector('#middle-img');
+// Selectors for bottom content in main tag
+let mainBottom = document.querySelectorAll('.bottom-content');
+let mainBottomServiceH4 = mainBottom[0].children[0].children[0];
+let mainBottomServiceContent = mainBottom[0].children[0].children[1];
+let mainBottomProductH4 = mainBottom[0].children[1].children[0];
+let mainBottomProductContent = mainBottom[0].children[1].children[1];
+let mainBottomVisionH4 = mainBottom[0].children[2].children[0];
+let mainBottomVisionContent = mainBottom[0].children[2].children[1];
+// Selectors for contact section
+let contactH4 = document.querySelector('.contact h4');
+let contactParas = document.querySelectorAll('.contact p');
+let contactAddress = contactParas[0];
+let contactPhone = contactParas[1];
+let contactEmail = contactParas[2];
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
@@ -44,9 +71,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 /**
  *  Insert all images using DOM manipulation
   */
-let ctaImg = document.querySelector('#cta-img');
+// Image for CTA
 ctaImg.setAttribute('src', siteContent.cta["img-src"]);
 ctaImg.setAttribute('style', 'display: flex;');
-
-let mainContentImg = document.querySelector('#middle-img');
+// Image for main content
 mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
