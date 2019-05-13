@@ -79,3 +79,5 @@ mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]
 
 // Update all HTML content using selectors
 navLinks.forEach((navLink, index) => navLink.innerText = siteContent.nav["nav-item-" + (index + 1)]);
+ctaH1.innerText = siteContent.cta.h1;
+ctaButton.innerText = siteContent.cta.button;
